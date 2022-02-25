@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c13ac5acd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-side">
+        <div class="weather-gradient"></div>
+        <div class="date-container">
+          <h2 class="date-dayname">Thursaday</h2>
+          <span class="date-day">20 Jan 2022</span>
+          <br />
+          <form class="search-holder">
+            <input type="search" class="search-box" placeholder="Enter City" />
+            <input type="submit" value="ok" class="button-submit" />
+          </form>
+          <button id="currentloc">your location</button>
+          <br />
+          <span class="location">Tehran, IR</span>
+        </div>
+        <div class="weather-container">
+          <span class="weather-icon"><i class="fas fa-sun"></i></span>
+          <h1>
+            <span class="weather-temp">10</span>
+            <a href="#" class="centigrade">°C</a>
+            <span class="separate">|</span>
+            <a href="#" class="fahrenheit">°F</a>
+          </h1>
+          <h3 class="weather-desc">Sunny</h3>
+        </div>
+      </div>
+      <div class="info-side">
+        <div class="today-info-container">
+          <div class="today-info">
+            <div class="precipitation">
+              <span class="title">Feel like</span
+              ><span class="value">15°C</span>
+              <div class="clear"></div>
+            </div>
+            <div class="humidity">
+              <span class="title">Humidity</span><span class="value">24 %</span>
+              <div class="clear"></div>
+            </div>
+            <div class="wind">
+              <span class="title">Wind</span><span class="value">5 km/h</span>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="week-container">
+          <ul class="week-list">
+            <li>
+              <span class="weather-icon"><i class="fas fa-sun"></i></span
+              ><span class="day-name">Fri</span
+              ><span class="day-temp">30°C</span>
+            </li>
+            <li>
+              <span class="weather-icon"
+                ><i class="fas fa-cloud-sun-rain"></i></span
+              ><span class="day-name">Sat</span
+              ><span class="day-temp">11°C</span>
+            </li>
+            <li>
+              <span class="weather-icon"><i class="far fa-snowflake"></i></span
+              ><span class="day-name">Sun</span
+              ><span class="day-temp">09°C</span>
+            </li>
+            <li>
+              <span class="weather-icon"><i class="fas fa-cloud"></i></span
+              ><span class="day-name">Mon</span
+              ><span class="day-temp">15°C</span>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="location-container">
+          <button class="location-button">
+            <span class="weather-icon"
+              ><i class="fas fa-map-marker-alt"></i></span
+            ><span>Change location</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
