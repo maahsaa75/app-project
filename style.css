@@ -237,3 +237,9 @@ body {
   width: auto;
   margin-right: 5px;
 }
+
+.github-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 20px;
+}
